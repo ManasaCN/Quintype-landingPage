@@ -1,0 +1,427 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link href="vendor/bootstrap/css_second/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/mainq.css" type="text/css" />
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="jsToday/js.js"></script>
+    <!--Inline stylesheet -->
+    <style>
+        #slideshoww {
+            overflow: hidden;
+            height: 510px;
+            width: 728px;
+            margin: 0 auto;
+            font-family: Helvetica, sans-serif;
+            padding: 5%;
+            text-align: center;
+        }
+
+        .slidee-wrapperr {
+            width: 2912px;
+            -webkit-animation: slide 18s ease infinite;
+            font-family: Helvetica, sans-serif;
+            padding: 5%;
+            text-align: center;
+        }
+
+        .slidee {
+            float: left;
+            height: 510px;
+            width: 728px;
+            font-family: Helvetica, sans-serif;
+            padding: 5%;
+            text-align: center;
+        }
+
+            .slidee:nth-child(1) {
+                background-image: url('img/Airtel-3G-Madhya-Pradesh-and-Chhattisgarh.jpg');
+            }
+
+            .slidee:nth-child(2) {
+                background-image: url('img/1452880027-4196.jpg');
+            }
+
+            .slidee:nth-child(3) {
+                background-image: url('img/google-ceo-sundar-pichai-addressing-a-program-to-announce-the-digital-unlocked-skill-program-14835295281695.jpg');
+            }
+
+            .slidee:nth-child(4) {
+                background: #D9D055;
+            }
+
+        .slidee-number {
+            color: #000;
+            text-align: center;
+            font-size: 10em;
+        }
+
+        @-webkit-keyframes slide {
+            20% {
+                margin-left: 0px;
+            }
+
+            30% {
+                margin-left: -728px;
+            }
+
+            50% {
+                margin-left: -728px;
+            }
+
+            60% {
+                margin-left: -1456px;
+            }
+
+            70% {
+                margin-left: -1456px;
+            }
+
+            80% {
+                margin-left: -2184px;
+            }
+
+            90% {
+                margin-left: -2184px;
+            }
+        }
+
+        .read-more-state {
+            display: none;
+        }
+
+        .read-more-target {
+            opacity: 0;
+            max-height: 0;
+            font-size: 0;
+            transition: .25s ease;
+        }
+
+        .read-more-state:checked ~ .read-more-wrap .read-more-target {
+            opacity: 1;
+            font-size: inherit;
+            max-height: 999em;
+        }
+
+        .read-more-state ~ .read-more-trigger:before {
+            content: 'Show more';
+        }
+
+        .read-more-state:checked ~ .read-more-trigger:before {
+            content: 'Show less';
+        }
+
+        .read-more-trigger {
+            cursor: pointer;
+            display: inline-block;
+            padding: 0 .5em;
+            color: #000;
+            font-size: .9em;
+            line-height: 2;
+            border-radius: .25em;
+        }
+
+        /* Other style */
+        body {
+            padding: 2%;
+        }
+
+        p {
+            padding: 2%;
+            color: #000;
+            border-radius: .25em;
+        }
+    </style>
+    <!--End of Inline stylesheet -->
+</head>
+<body style="background-color:#e8dddd">
+    <section class="navigation">
+        <!--Navigational bar start -->
+        <div class="nav-container">
+            <div class="brand">
+                <a href="#!">Quintype</a>
+            </div>
+            <nav>
+                <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+                <ul class="nav-list">
+                    <li>
+                        <a href="#!">Science</a>
+                        <ul class="nav-dropdown">
+                            <li>
+                                <a href="#first_Section">Politics</a>
+                            </li>
+                            <li>
+                                <a href="#second_Section">Food and health</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#third_Section">Recent Stories</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+    <!--End of Navigational Bar -->
+    <!--Start of first section-->
+    <section>
+        <div class="nav-container__varywidth" id="first_Section">
+            <div class="text-center">
+                <h1>SCIENCE</h1>
+                <p class="text-muted">Politics</p>
+                <hr />
+            </div>
+            <div class="row">
+                <div class="col-lg-5 col-md-5 col-sm-12 col-xl-5 my-auto">
+                    <div class="container">
+                        <div class="thumbnail">
+                            <div class="image">
+                                <img src="img/lin-manuel-miranda-donald-trump-peurto-rico.jpg" height="110%" width="110%" style="border-radius: 8px;" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-md-7 col-sm-12 col-xl-7 my-auto ">
+                    <div class="modalBox">
+                        <h2>Lin-Manuel Miranda says Donald Trump is spreading ‘a virulent strain of a virus’</h2><br />
+                        <h5 class="text-muted">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.</h5>
+                        <div class="row">
+                            <div class="col-lg-2 col-md-6 col-sm-12 ">
+                                <img src="img/Alex_Parkinson_500px.jpeg" style="height:50px" width="50px" />
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 ">
+                                <p class="text-muted">Alex Parkinson <br />Posted 15min ago </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr />
+            <div class="row">
+                <div class="col-lg-7 col-md-7 col-sm-12 col-xl-7 my-auto ">
+                    <div class="modalBox">
+                        <h2>Jenny Lawson Book Publisher</h2><br />
+                        <h5 class="text-muted">Jenny Lawson — the best-selling author of “Let’s Pretend This Never Happened” and “Furiously Happy” — has a new book, and it’s a coloring book, kind of.</h5>
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-12 ">
+                                <p class="text-muted">Jonnanthon Doe </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-5 col-md-5 col-sm-12 col-xl-5 my-auto">
+
+                    <div class="container">
+                        <div class="thumbnail">
+                            <div class="image">
+                                <img src="img/JennyLawsonAnne-e1489774165490.jpg" height="110%" width="110%" style="border-radius: 8px;" />
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <hr />
+        <!--hovering over the images will pause the slideshow -->
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xl-6 my-auto ">
+                <div id="slideshoww">
+                    <div class="slidee-wrapperr">
+                        <div class="slidee"><h1 class="slidee-number"></h1></div>
+                        <div class="slidee"><h1 class="slidee-number"></h1></div>
+                        <div class="slidee"><h1 class="slidee-number"></h1></div>
+                        <div class="slidee"><h1 class="slidee-number">4</h1></div>
+                        <div class="slidee"><h1 class="slidee-number">5</h1></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xl-1 my-auto ">
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12 col-xl-4 my-auto ">
+
+
+                <div class="modalBox">
+                    <marquee direction="up">
+                        <div>
+                            <h5>Airtel offers 3GB Free Data A Month To Custmoers Who Switch To Its 4G Service <br /><p class="text-muted">Alex parkinsin</p></h5>
+                        </div>
+                        <hr style="color:rebeccapurple" />
+                        <div>
+                            <h5>Warning letter for Ankleshwar plan sends Wockhardt shares to near 2.5 year low <br /><p class="text-muted">Alice Doe</p></h5>
+                        </div>
+                        <hr style="color:aqua" />
+                        <div>
+                            <h5>Sundar pichai lunches digital unlaunched programm <br /><p class="text-muted">Jonnath Doe</p></h5>
+                        </div>
+                        <hr style="color:aqua" />
+                    </marquee>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <!--End of first section-->
+    <hr style="background-color:powderblue;" />
+    <!--start of second section-->
+    <div class="nav-container__varywidth" id="second_Section">
+        <section class="features" id="features">
+            <div class="container">
+                <div class="section-heading text-center">
+                    <h1 style="color-rendering:Blue">Food And Health</h1>
+                    <p class="text-muted">Health is wealth!</p>
+                    <hr>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 ">
+                        <div class="device-container">
+                            <div class="device-mockup iphone6_plus portrait white">
+                                <div class="device">
+                                    <div class="screen">
+                                        <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
+                                        <div class="pic">
+                                            <div class="text">
+                                                Food and Health
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 my-auto">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-lg-1"> </div>
+                                <div class="col-lg-5">
+                                    <div class="feature-item">
+                                        <div class="thumbnail">
+                                            <div class="image">
+                                                <img src="img/food_picture_01_hd_pictures_167558.jpg" height="200px" width="200px" />
+                                            </div>
+                                        </div>
+                                        <h2>This is what 300 calorie look like think twice before you eat!!</h2>
+
+                                        <p class="text-muted">Jonnath Doe</p>
+                                        <div>
+                                            <input type="checkbox" class="read-more-state" id="post-1" />
+
+                                            <p class="read-more-wrap">What Are 300 Calories?<span class="read-more-target">Portion size control is one of the hardest thing for dieters. To lose weight, you should eat around 1800 calories in the whole day. So the average size of one meal comes around 300 calories but what do calories look like!!!</span></p>
+
+                                            <label for="post-1" class="read-more-trigger"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="feature-item">
+                                        <div class="thumbnail">
+                                            <div class="image">
+                                                <img src="img/carrot_625x350_41448272603.jpg" height="200px" width="200px" />
+                                            </div>
+                                        </div>
+                                        <h2>7 Carrot Juice Benefits: Why You Need to Drink Up This Veggie</h2>
+
+                                        <p class="text-muted">Plaveentha Bora</p>
+                                        <div>
+                                            <input type="checkbox" class="read-more-state" id="post-2" />
+
+                                            <p class="read-more-wrap">It is not without reason that our elders always told us to load up on carrots. <span class="read-more-target">Of all of their health benefiting properties, the one related to improving the eyesight was often emphasized upon.</span></p>
+
+                                            <label for="post-2" class="read-more-trigger"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!--End of second section-->
+    <hr style="background-color:powderblue;" />
+    <!--start of Third section-->
+    <div class="nav-container__varywidth" id="third_Section">
+        <section class="features" id="features">
+            <div class="container">
+                <div class="section-heading text-center">
+                    <h1>Recent Stories</h1>
+
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 ">
+                        <div class="device-container">
+                            <div class="device-mockup iphone6_plus portrait white">
+                                <h2>Latest News</h2><br />
+
+                                <img src="img/recent_stories/_99920730_c2c3b1ec-21a2-4323-86fd-9d5bb0d5954b.jpg" height="110%" width="110%" />
+                            </div>
+                            <br />
+                            <div>
+                                <img src="img/recent_stories/ipl-2018_2_759.jpg" height="110%" width="110%" />
+                            </div>
+                            <br />
+                            <div>
+
+                                <img src="img/recent_stories/visa-circulaire-gueant-etudiants-etrangers_850657.jpg" height="110%" width="110%" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-7" style="margin-top:100px">
+                        <h3 class="demo-home">Health and Fitness</h3><br />
+                        <h5>Food may influence cancer spread</h5>
+                        <p class="text-muted">
+                            By James Gallagher
+                            Health and science correspondent
+                        </p>
+                        <div>
+                            <br />
+                            <h3>Sports</h3><br />
+                            <h5>IPL player retention 2018: RCB retain Virat Kohli, MS Dhoni returns to CSK</h5>
+                            <p class="text-muted">
+                                PTI | Updated: Jan 5, 2018, 14:52 IST
+                            </p>
+                        </div><br />
+                        <div>
+                            <h3>Politics</h3><br />
+                            <h5>Trump administration considers proposal that may send back more than 500,000 Indian tech workers</h5>
+                            <p class="text-muted">
+                                Chidanand Rajghatta | TNN | Updated: Jan 3, 2018, 12:55 IST
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!--End of Third section-->
+    <!--start of Footer-->
+    <footer>
+        <section class="navigation">
+            <div class="nav-container">
+                <div class="brand">
+                    <img src="img/recent_stories/shape@3x.png" height="20%" width="20%" />
+                </div>
+                <nav>
+                    <ul class="nav-list">
+                        <li>
+                            <a href="#first_Section">About us| Privacy Policy | Terms and Condition</a>
+                        </li>
+                        <li style="color:white">
+                            Copyright 2016@<br />
+                            powered by Quintype
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    </footer>
+    <!--End of Footer-->
+</body>
+</html>
